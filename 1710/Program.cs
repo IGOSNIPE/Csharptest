@@ -36,13 +36,24 @@
                 {
                     System.Console.WriteLine("Poda mnie obicie tygo krzysla:\n1. Drewno \n2. Welna\n3. Jedwab \n4.Diament");
                     int obicieJakoInt = System.Int32.Parse(System.Console.ReadLine());
+
                     krzeslo.Materialy obicie = (krzeslo.Materialy)obicieJakoInt;
+
                     //krzeslo noweKrzeslo = new krzeslo(producent, ...);
                     krzeslo noweKrzeslo = new krzeslo(producent, kolekcja, obicie, cena);
                 }
                 if (wybor == 2)
                 {
+                    System.Console.WriteLine("Podaj szerokość");
+                    int szerokoscuser = System.Int32.Parse(System.Console.ReadLine());
 
+                    System.Console.WriteLine("Podaj długość");
+                    int dlugoscuser = System.Int32.Parse(System.Console.ReadLine());
+
+                    stol.szerokosc szerokosc = (stol.szerokosc)szerokoscuser;
+                    stol.dlugosc dlugosc = (stol.dlugosc)dlugoscuser;
+
+                    stol nowystol = new stol(producent, kolekcja, obicie, cena, szerokosc, dlugosc)
                 }
             }
             // tutaj wyjscie z programu czy tam wyswietlenie ceny
